@@ -1,0 +1,95 @@
+@media (min-width:740px) and (max-width:1023px) {
+    .header_menu-input:checked ~ .music-nav {
+        transform: translateX(197%);
+        opacity: 1;
+    }
+    .music-nav {
+        border-top-right-radius: 41px;
+        border-bottom-right-radius: 41px;
+        transform: translateX(92%);
+    }
+    .music-nav_item {
+        padding: 7px 61px;
+        font-size: 16px;
+    }
+    .music-nav_list {
+        border-top-right-radius: 41px;
+        border-bottom-right-radius: 41px;
+    }
+    .music-nav_item:first-child {
+        border-top-right-radius: 41px;
+    }
+    .music-nav_item:last-child {
+        border-bottom-right-radius: 41px;
+    }
+}
+@media (max-width: 739px) {
+    .music_player {
+        display: block;
+        background-color: #888887c2;
+    }
+    .playlist {
+        margin-top: 493px;
+        max-width: 480px;
+        width: 100%;
+    }
+    .spectrum {
+        transform: translateY(-53%);
+        right: 65px;
+    }
+    .header_menu {
+        position: fixed;
+    }
+    .song .title {
+        font-size: 16px;
+    }
+    .app_bottom {
+        height: 2px;
+    }
+    /* Music nav list */
+    .header_menu{
+        top: 13px;
+    }
+    .header_menu{
+        -webkit-tap-highlight-color: transparent;
+    }
+    .header_menu-input:checked ~ .music-nav {
+        transform: translateX(80%);
+    }
+    .music-nav {
+        border-top-left-radius: 41px;
+        border-bottom-left-radius: 41px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        transform: translateX(92%);
+        z-index: 13;
+        top: 70px;
+
+    }
+    .music-nav_item {
+        padding: 7px 61px;
+        font-size: 16px;
+        -webkit-tap-highlight-color: transparent;
+
+    }
+    .music-nav_list {
+        border-top-left-radius: 41px;
+        border-bottom-left-radius: 41px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }   
+    .music-nav_item:first-child {
+        border-top-left-radius: 41px;
+        border-top-right-radius: 0;
+    }
+    .music-nav_item:last-child {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 41px;
+    }
+    .control .btn {
+        -webkit-tap-highlight-color: transparent;
+    }
+    .cd-volume {
+        -webkit-tap-highlight-color: transparent;
+    }
+}

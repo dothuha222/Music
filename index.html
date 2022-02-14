@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="music_player ">
+    <div class="music_player">
         <div class="player">
             <div class="player_container">
                 <!-- Dashboard -->
@@ -30,7 +31,7 @@
             
                         <!-- CD -->
                         <div class="cd">
-                            <div class="cd-thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+                            <div class="cd-thumb" style="background-image: url('./assets/images/song1.jpg')">
                             </div>
                         </div>
             
@@ -68,6 +69,8 @@
                         <div class="love_music">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
+                            <span class="love_music-notice add"></span>
+                            <span class="love_music-notice remove"></span> 
                         </div>
                         <div class="time">
                             <div class="current-time"></div>
@@ -81,25 +84,26 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </label>
                     <input type="checkbox" name="" hidden id="header_menu-input" class="header_menu-input">
-                    <label for="header_menu-input" class="music_overlay">
-                    </label>
                     <div class="music-nav">
                         <ul class="music-nav_list">
-                            <li class="music-nav_item">
+                            <li class="vietnamese music-nav_item active ">
                                 <span>Vietnamese</span>
                             </li>
-                            <li class="music-nav_item">
+                            <li class="us_uk music-nav_item ">
                                 <span>US-UK</span>
                             </li>
-                            <li class="music-nav_item">
+                            <li class=" china music-nav_item ">
                                 <span>China</span>
                             </li>
-                            <li class="music-nav_item">
+                            <li class="love_list music-nav_item">
                                 <span>Love Playlist</span>
                             </li>
                         </ul>
                     </div>
-            
+                    <label for="header_menu-input" class="music_overlay">
+                    </label>
+                    
+                    
                 <!-- Playlist -->
                     <div class="playlist">
                         <!-- <div class="song">
@@ -122,9 +126,11 @@
             </div>
         </div>
     </div>
-    
+    <div class="app_bottom">
+        
+    </div>
 
-    <script  src="./main.js"></script>
+    <script src="./main.js"></script>
     
 <!-- Design from: https://static.collectui.com/shots/3671744/musicloud-revolutionary-app-for-music-streaming-large -->
 </body>

@@ -113,7 +113,8 @@
   
   .control .btn.active {
     color: var(--primary-color);
-    background-color:#fff
+    background-color:#fff;
+    border-radius: 50%;
   }
   
   .control .btn-toggle-play {
@@ -202,6 +203,7 @@
     color: #fff;
     cursor: pointer;
     width: 30px;
+    height: 30px;
   }
 
   .love_music .fa-solid.fa-heart {
@@ -213,6 +215,39 @@
   }
   .love_music.active .fa-regular.fa-heart{
     display: none;
+  }
+  .love_music-notice{
+    font-size: 10px;
+    /* background-color: #524d50; */
+    animation: fadeIn linear 0.2s;
+    display: inline-block;
+    user-select: none;
+  }
+  .love_music-notice.add{
+    position: relative;
+    top: -70px;
+    right: 30px;
+    width: 96px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0px 5px;
+    display:none;
+  }
+  .love_music-notice.remove {
+    position: relative;
+    top: -70px;
+    right: 42px;
+    width: 108px;
+    height: 17px;
+    text-align: center;
+    line-height: 17px;
+    display: none;
+  }
+  .love_music .fa-regular:hover ~ .love_music-notice.add{
+    display:inline-block;
+  }
+  .love_music .fa-solid:hover ~ .love_music-notice.remove {
+    display:inline-block;
   }
   
   /* PLAYLIST */
@@ -495,6 +530,11 @@
   border-bottom: 1px solid #a5a5a58c;
   user-select: none;
 }
+.music-nav_item.active{
+  background-color: #ececece3;
+  color: #070707;
+  cursor: default;
+}
 .music-nav_item:first-child{
   border-top-right-radius: 30px;
 }
@@ -506,4 +546,9 @@
   background-color: #ececece3;
   color: #070707;
   cursor: pointer;
+}
+.app_bottom{
+  height: 20px;
+  width: 100%;
+  background-color: #888887c2;
 }
